@@ -1,0 +1,238 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container {
+	background: url(images/pinksundae.jpeg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(250, 250, 250);
+	max-width: 60em;
+	margin: auto;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	max-width: 60em;
+	margin: auto;
+	background-color: rgb(250, 250, 250);
+}
+
+/* >>> IMPORTANT: you have to change the wrap of the content of your home 
+page (index) in a div with a class home-container to make it work. 
+If you used a div with the class container on your home, you’ll only need 
+to change the name of the class. And you need a div with the class container 
+and all the other pages.  */
+
+
+main { 
+	padding: 1em 2em 6em;
+	font-family: "circe-slab-b", serif;
+	font-weight: 300;
+	font-style: normal;
+
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+body {
+	background-color:rgb(150, 150, 150);
+
+}
+
+article {
+	max-width: 30em;
+	margin: auto;
+}
+
+header {
+	display: grid;
+	grid-template-columns: auto auto;
+	background: rgb(204, 204, 204);
+	}
+
+h1 {
+	width: 12em;
+	margin: 1em;
+	}
+
+h2 {
+	font-weight: bold;
+	font-family: "eds-market-bold-script", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3em;
+	color: rgb(213, 113, 157)
+	
+		}
+	
+h3 {
+	font-size: 1.5em;
+	margin: 1em 0em 0.5em;
+	grid-column: 1/3;
+
+	font-family: "circe-slab-b", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgb(213, 113, 157);
+
+}
+
+h4 {
+	font-family: "eds-market-upright-script", sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	}
+	
+ul li 	{
+	list-style-type: none;
+	font-family: "circe-slab-b", serif;
+	font-weight: 300;
+	font-style: normal;
+
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+main.menu ul {
+		margin: 2em 1em;
+}	
+
+main.menu ul li {
+		margin: 0em 0em 2em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		font-family: sans-serif;
+}	
+
+main.class {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+p {
+	margin: 1em 0em 1em;
+	}
+	
+p.description {
+	grid-column: 1/3;
+	margin: 0em;
+	font-family: "circe-slab-b", serif;
+font-weight: 300;
+font-style: normal;
+
+	}
+	
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: rgb(150 150 150);
+	text-align: right;
+	margin: 0rem;
+
+	font-family: "circe-slab-b", serif;
+	font-weight: 300;
+	font-style: normal;
+
+	}
+
+nav ul  {
+	margin-top: 1em;
+	text-align: right;
+	}
+	
+nav ul li {
+	font-family: "eds-market-bold-script", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin-right: 1em;
+	font-weight: bold;
+	font-size: 2em;
+	
+	}
+	
+nav ul li a {
+	color: rgb(0, 0, 0);
+	}
+
+nav ul li.selected a { 
+	color: rgb(213, 113, 157);
+} 
+	
+p.slogan {
+	font-size: 3em;
+	font-family: "circe-slab-b", serif;
+	font-weight: 300;
+	font-style: normal;
+	margin: 2rem 1rem 6rem;
+	color: rgb(0, 0, 0);	
+
+	max-width: 5em;
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding:  1rem 0.5rem;
+  background: rgb(213, 113, 157);
+}
+
+address {
+	color: rgb (0, 0, 0);
+	font-family: sans-serif;
+
+	font-family: "circe-slab-b", serif;
+font-weight: 300;
+font-style: normal;
+
+	}
+
+footer p {
+	margin: 0;
+	font-family: "circe-slab-b", serif;
+	font-weight: 300;
+	font-style: normal;
+
+}
+
+@media screen and (min-width: 60em) {
+
+	main.menu ul {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 6em;
+    }
+
+	nav ul li {
+	display:inline;
+	padding-right: 1em;
+	}
+
+	p.slogan {
+	max-width: 10em;
+	}
+
+}
+
+	article {
+		max-width: 40em;
+		margin: auto;
+	}
